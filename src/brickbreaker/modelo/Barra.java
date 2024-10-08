@@ -12,7 +12,7 @@ public class Barra {
         this.altura = 20;
         this.velocidadx = 25;
         this.anchoPanel = 700;
-        this.altoPanel = 550;
+        this.altoPanel = 600;
     }
 
     public void mover(int nuevaX) {
@@ -56,6 +56,6 @@ public class Barra {
     }
 
     public int getY() {
-        return (altoPanel + 30) - altura;
+        return altoPanel - (altura + 10);
     }
 }

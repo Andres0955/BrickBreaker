@@ -5,12 +5,12 @@ import java.awt.Graphics;
 import java.awt.Image;
 import java.net.URL;
 import javax.swing.ImageIcon;
+import brickbreaker.controlador.Control;
 
 public class JpInstrucciones extends javax.swing.JPanel {   
-    private JfJuego jfJuego;
     private Image fondo;
 
-    public JpInstrucciones(JfJuego jfJuego) {
+    public JpInstrucciones() {
         URL imageUrl = getClass().getResource("/recursos/imagenes/fondo.png");
         if (imageUrl != null) {
             fondo = new ImageIcon(imageUrl).getImage();
@@ -18,7 +18,6 @@ public class JpInstrucciones extends javax.swing.JPanel {
             System.out.println("Imagen no encontrada");
         }
         
-        this.jfJuego = jfJuego;
         initComponents();
     }
     
@@ -80,7 +79,8 @@ public class JpInstrucciones extends javax.swing.JPanel {
     }//GEN-LAST:event_btnSalirActionPerformed
 
     private void btnRegresarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnRegresarActionPerformed
-        jfJuego.cambiarPanel("inicio");
+        JpInicio jpInicio = new JpInicio();
+        Control.cambiarPanel(jpInicio);
     }//GEN-LAST:event_btnRegresarActionPerformed
 
 

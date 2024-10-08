@@ -1,12 +1,23 @@
 package brickbreaker.vista;
 
+import brickbreaker.controlador.Control;
+import brickbreaker.modelo.Barra;
+import brickbreaker.modelo.Pelota;
+
 public class JpNiveles extends javax.swing.JPanel {
-    private JfJuego jfJuego;
-    public JpNiveles(JfJuego jfJuego) {
-        this.jfJuego = jfJuego;
+     private static Control control;
+     private int nivelSeleccionado;
+    
+    public JpNiveles() {
+        
         initComponents();
     }
 
+    
+    public static void setControl(Control control){
+        JpNiveles.control = control;
+    }
+    
     /**
      * This method is called from within the constructor to initialize the form.
      * WARNING: Do NOT modify this code. The content of this method is always
@@ -66,20 +77,31 @@ public class JpNiveles extends javax.swing.JPanel {
     }// </editor-fold>//GEN-END:initComponents
 
     private void btnRegresar1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnRegresar1ActionPerformed
-        jfJuego.cambiarPanel("inicio");
-        
+        JpInicio jpInicio = new JpInicio();
+        Control.cambiarPanel(jpInicio);
     }//GEN-LAST:event_btnRegresar1ActionPerformed
 
     private void btnNivel3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnNivel3ActionPerformed
-        // TODO add your handling code here:
+        nivelSeleccionado = 3;  // Asigna el nivel 3
+        JpJuego.setNivelSeleccionado(nivelSeleccionado);
+        control.setNivelSeleccionado(nivelSeleccionado);  // Informa al Control el nivel seleccionado
+        control.reiniciarJuego();  // Reinicia el juego para actualizar los bloques según el nivel
+        Control.cambiarPanel(Control.getJpJuego());
     }//GEN-LAST:event_btnNivel3ActionPerformed
 
     private void btnNivel1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnNivel1ActionPerformed
-        jfJuego.cambiarPanel("juego");
+        nivelSeleccionado = 1;  // Asigna el nivel 1
+    control.setNivelSeleccionado(nivelSeleccionado);  // Informa al Control el nivel seleccionado
+    control.reiniciarJuego();  // Reinicia el juego para actualizar los bloques según el nivel
+    Control.cambiarPanel(Control.getJpJuego());
     }//GEN-LAST:event_btnNivel1ActionPerformed
 
     private void btnNivel2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnNivel2ActionPerformed
-        // TODO add your handling code here:
+        nivelSeleccionado = 2;  // Asigna el nivel 2
+    control.setNivelSeleccionado(nivelSeleccionado);  // Informa al Control el nivel seleccionado
+    control.reiniciarJuego();  // Reinicia el juego para actualizar los bloques según el nivel
+    Control.cambiarPanel(Control.getJpJuego());
+
     }//GEN-LAST:event_btnNivel2ActionPerformed
 
 

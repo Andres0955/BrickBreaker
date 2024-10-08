@@ -4,36 +4,41 @@ import brickbreaker.controlador.Control;
 import brickbreaker.modelo.*;
 import java.awt.Color;
 import java.awt.Graphics;
+import java.awt.event.KeyAdapter;
+import java.awt.event.KeyEvent;
+import java.awt.event.MouseEvent;
+import java.awt.event.MouseListener;
+import java.awt.event.MouseMotionListener;
 import java.util.ArrayList;
 import java.util.Random;
 import javax.swing.JFrame;
+import javax.swing.SwingUtilities;
 
 
 public class JpJuego extends javax.swing.JPanel {
     private Barra barra;
     private Pelota pelota;
+    private Control control;
     private Bloques bloque;
-    private JfJuego jfJuego;
-    private JFrame frameJuego;
     private Bloques[] bloques;
     private Random random;
     private boolean nivel1Completo;
     private ArrayList<Pelota> vidasPelotas;
     private boolean perder;
-    private Control control;
+    private static int nivelSeleccionado;
 
-    public JpJuego(Pelota pelota, Barra barra, JfJuego jfJuego, JFrame frame, Control control) {
+    public JpJuego(Pelota pelota, Barra barra, Control control) {
         this.pelota = pelota;
         this.barra = barra;
-        this.jfJuego = jfJuego;
-        this.frameJuego = frame;
+        this.control = control;
         this.random = new Random();
         this.nivel1Completo = false;
         this.vidasPelotas = new ArrayList<>();
         this.perder = false;
-        this.control = control;
-        
+        this.bloques = new Bloques[32];
         initComponents();
+        
+        
     }
 
     public void paintComponent(Graphics g){
@@ -47,9 +52,13 @@ public class JpJuego extends javax.swing.JPanel {
         g.fillRect(barra.getX(), barra.getY(), barra.getBase(), barra.getAltura());
         
         for(int i = 0; i < 32; i++){
-            g.setColor(Color.BLUE);
-            g.fillRect(bloques[i].getX(), bloques[i].getY(), bloques[i].getAncho(), bloques[i].getAlto());
+            if(bloques[i] != null){
+                g.setColor(Color.BLUE);
+                g.fillRect(bloques[i].getX(), bloques[i].getY(), bloques[i].getAncho(), bloques[i].getAlto());
+            }
+            
         }
+         
         
         for(Pelota vidasPintar: vidasPelotas){
             if(vidasPelotas != null){
@@ -67,6 +76,21 @@ public class JpJuego extends javax.swing.JPanel {
         
         
     }
+    
+    public void moverBloquesHorizontales() {
+        if(nivelSeleccionado == 3){
+
+            for (int i = 0; i < 32; i++) {
+                if (bloques[i] != null && i < 8 || i >= 16 && i < 24) {
+                    // Mueve el bloque horizontalmente
+                    bloques[i].moverDerecha();
+                }else if(bloques[i] != null && i >= 8 && i < 16 || i >= 24 ){
+                    bloques[i].moverIzquierda();
+                }
+            }
+        }
+    
+}
     
 
     public void actualizar() {
@@ -92,6 +116,10 @@ public class JpJuego extends javax.swing.JPanel {
     
     public void setControl(Control control){
         this.control = control;
+    }
+    
+    public static void setNivelSeleccionado(int nivel){
+        JpJuego.nivelSeleccionado = nivel;
     }
     @SuppressWarnings("unchecked")
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
@@ -144,7 +172,7 @@ public class JpJuego extends javax.swing.JPanel {
     }// </editor-fold>//GEN-END:initComponents
 
     private void btnJugarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnJugarActionPerformed
-        control.iniciar();
+        //control.iniciar();
     }//GEN-LAST:event_btnJugarActionPerformed
 
     private void btnReiniciarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnReiniciarActionPerformed
@@ -152,9 +180,7 @@ public class JpJuego extends javax.swing.JPanel {
     }//GEN-LAST:event_btnReiniciarActionPerformed
 
     private void btnRegresarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnRegresarActionPerformed
-        jfJuego.cambiarPanel("niveles");
-        frameJuego.setVisible(false);
-        jfJuego.setVisible(true);
+        control.reiniciarJuego();
     }//GEN-LAST:event_btnRegresarActionPerformed
 
 

@@ -12,9 +12,8 @@ import javax.swing.ImageIcon;
 
 public class JpInicio extends javax.swing.JPanel {
     private Image fondo;
-    private JfJuego jfJuego;
     
-    public JpInicio(JfJuego jfInicio) {
+    public JpInicio() {
         URL imageUrl = getClass().getResource("/recursos/imagenes/fondo.png");
         if (imageUrl != null) {
             fondo = new ImageIcon(imageUrl).getImage();
@@ -22,7 +21,7 @@ public class JpInicio extends javax.swing.JPanel {
             System.out.println("Imagen no encontrada");
         }
        
-        this.jfJuego = jfInicio;
+        //this.jfJuego = jfInicio;
         initComponents();
         
     }
@@ -88,7 +87,8 @@ public class JpInicio extends javax.swing.JPanel {
     }// </editor-fold>//GEN-END:initComponents
 
     private void btnInstruccionesActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnInstruccionesActionPerformed
-        jfJuego.cambiarPanel("instrucciones");
+        JpInstrucciones jpInstrucciones = new JpInstrucciones();
+        Control.cambiarPanel(jpInstrucciones);
     }//GEN-LAST:event_btnInstruccionesActionPerformed
 
     private void btnSalirActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnSalirActionPerformed
@@ -96,8 +96,8 @@ public class JpInicio extends javax.swing.JPanel {
     }//GEN-LAST:event_btnSalirActionPerformed
 
     private void btnIniciarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnIniciarActionPerformed
-        //Control control = new Control(jfJuego);   
-        jfJuego.cambiarPanel("niveles");
+        JpNiveles jpNiveles = new JpNiveles();
+        Control.cambiarPanel(jpNiveles);
         
         //control.iniciar();
         
