@@ -1,18 +1,24 @@
 package brickbreaker.modelo;
 
+import java.awt.Image;
+import javax.swing.ImageIcon;
+
 public class Barra {
     private int x, y;
     private int base, altura;
     private int velocidadx;
     private int anchoPanel, altoPanel;
+    private Image imagen;
 
-    public Barra() {
-        this.x = 100;
-        this.base = 150;
-        this.altura = 20;
-        this.velocidadx = 25;
+    public Barra(int x, int y, int base, int altura, int velocidad, String rutaImagen) {
+        this.x = x;
+        this.y = y;        
+        this.base = base;
+        this.altura = altura;
+        this.velocidadx = velocidad;
         this.anchoPanel = 700;
         this.altoPanel = 600;
+        this.imagen = new ImageIcon(getClass().getResource(rutaImagen)).getImage();
     }
 
     public void mover(int nuevaX) {
@@ -56,6 +62,15 @@ public class Barra {
     }
 
     public int getY() {
-        return altoPanel - (altura + 10);
+        return y;
     }
+    
+    public Image getImagen(){
+        return imagen;
+    }
+    
+    public void setBase(int nuevaBase){
+        this.base = nuevaBase;
+    }
+    
 }

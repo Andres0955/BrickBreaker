@@ -1,28 +1,34 @@
 package brickbreaker.modelo;
 
-import java.awt.Color;
+import java.awt.Image;
 import java.awt.Rectangle;
+import javax.swing.ImageIcon;
 
 public class Bloques {
     private int x, y;
     private int ancho, alto;
     private int dureza;
+    private int identificador;
     private int velocidadX;
     private boolean destruido;
     private Rectangle rectangulo;
     private int anchoPanel;
+    private Image imagen;
 
-    public Bloques(int x, int y, int ancho, int alto, int dureza, boolean destruido) {
+    public Bloques(int x, int y, int ancho, int alto, int dureza, int identificador, boolean destruido, String rutaImagen) {
         this.x = x;
         this.y = y;
         this.ancho = ancho;
         this.alto = alto;
         this.dureza = dureza;
-        this.velocidadX = 1;
+        this.identificador = identificador;
+        this.velocidadX = 2;
         this.destruido = destruido;
         this.rectangulo = new Rectangle();
         this.anchoPanel = 700;
+        this.imagen = new ImageIcon(getClass().getResource(rutaImagen)).getImage();
     }
+
     public void golpear() {
         if (dureza > 0) {
             dureza--;
@@ -33,27 +39,36 @@ public class Bloques {
     }
     
     public void moverDerecha() {
-        x += velocidadX; // Actualiza la posición en X
-
-        // Si el bloque sale por el borde derecho del panel, reaparece en el borde izquierdo
+        x += velocidadX + 1.5;
+        
         if (x > anchoPanel) {
-            x = -ancho; // Coloca el bloque justo fuera del panel por la izquierda
+            x = -ancho;
         }
-
-        // Actualiza la posición del rectángulo
+        
         rectangulo.setLocation(x, y);
     }
     
     public void moverIzquierda() {
-        x -= velocidadX; // Actualiza la posición en X
+        x -= velocidadX;
 
-        // Si el bloque sale por el borde derecho del panel, reaparece en el borde izquierdo
         if (x + ancho < 0) {
-            x  = anchoPanel; // Coloca el bloque justo fuera del panel por la izquierda
+            x  = anchoPanel;
         }
 
-        // Actualiza la posición del rectángulo
         rectangulo.setLocation(x, y);
+    }
+    
+    public void reducirDureza(){
+        this. dureza -= 1;
+        if(identificador == 2){
+            if(dureza == 1){
+                this.imagen = new ImageIcon(getClass().getResource("/recursos/imagenes/Ladrillos/LadriRojo02.png")).getImage();
+            }else if(dureza == 0){
+                this.imagen = new ImageIcon(getClass().getResource("/recursos/imagenes/Ladrillos/LadriRojo03.png")).getImage();
+            }
+        }else if(identificador == 1){
+            this.imagen = new ImageIcon(getClass().getResource("/recursos/imagenes/Ladrillos/LadriGris02.png")).getImage();
+        }
     }
 
     public boolean estaDestruido() {
@@ -78,5 +93,17 @@ public class Bloques {
     
     public boolean getDestruido(){
         return destruido;
+    }
+    
+    public Image getImagen(){
+        return imagen;
+    }
+    
+    public int getDureza(){
+        return dureza;
+    }
+    
+    public int getIdentificador(){
+        return identificador;
     }
 }
