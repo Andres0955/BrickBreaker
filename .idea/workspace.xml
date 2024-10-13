@@ -5,65 +5,65 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="6b0d1ca9-640e-4f15-a817-20a6138e1696" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/built-jar.properties" beforeDir="false" afterPath="$PROJECT_DIR$/build/built-jar.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/.netbeans_automatic_build" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/.netbeans_update_resources" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/build/classes/brickbreaker/BrickBreaker.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/brickbreaker/BrickBreaker.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/classes/brickbreaker/controlador/Control$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/brickbreaker/controlador/Control$1.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/classes/brickbreaker/controlador/Control$2.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/brickbreaker/controlador/Control$2.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/classes/brickbreaker/controlador/Control$3.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/brickbreaker/controlador/Control$3.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/classes/brickbreaker/controlador/Control$4.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/brickbreaker/controlador/Control$4.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/brickbreaker/controlador/Control$5.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/brickbreaker/controlador/Control$5.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/classes/brickbreaker/controlador/Control.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/brickbreaker/controlador/Control.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/classes/brickbreaker/modelo/Barra.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/brickbreaker/modelo/Barra.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/classes/brickbreaker/modelo/Bloques.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/brickbreaker/modelo/Bloques.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/brickbreaker/modelo/Pelota$1.class" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/build/classes/brickbreaker/modelo/Pelota.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/brickbreaker/modelo/Pelota.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/brickbreaker/utils/Sonido.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/brickbreaker/utils/Sonido.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/classes/brickbreaker/vista/JpInicio$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/brickbreaker/vista/JpInicio$1.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/classes/brickbreaker/vista/JpInicio$2.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/brickbreaker/vista/JpInicio$2.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/brickbreaker/vista/JpInicio$3.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/brickbreaker/vista/JpInicio$3.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/brickbreaker/vista/JpInicio$3.class" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/build/classes/brickbreaker/vista/JpInicio.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/brickbreaker/vista/JpInicio.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/brickbreaker/vista/JpInicio.form" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/brickbreaker/vista/JpInicio.form" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/brickbreaker/vista/JpInstrucciones$1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/brickbreaker/vista/JpInstrucciones$2.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/brickbreaker/vista/JpInstrucciones.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/brickbreaker/vista/JpInstrucciones.form" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/brickbreaker/vista/JpInicio.form" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/build/classes/brickbreaker/vista/JpJuego$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/brickbreaker/vista/JpJuego$1.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/classes/brickbreaker/vista/JpJuego$2.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/brickbreaker/vista/JpJuego$2.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/classes/brickbreaker/vista/JpJuego$3.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/brickbreaker/vista/JpJuego$3.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/brickbreaker/vista/JpJuego$4.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/brickbreaker/vista/JpJuego$5.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/brickbreaker/vista/JpJuego$6.class" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/build/classes/brickbreaker/vista/JpJuego.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/brickbreaker/vista/JpJuego.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/brickbreaker/vista/JpJuego.form" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/brickbreaker/vista/JpJuego.form" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/brickbreaker/vista/JpJuego.form" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/build/classes/brickbreaker/vista/JpNiveles$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/brickbreaker/vista/JpNiveles$1.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/classes/brickbreaker/vista/JpNiveles$2.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/brickbreaker/vista/JpNiveles$2.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/classes/brickbreaker/vista/JpNiveles$3.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/brickbreaker/vista/JpNiveles$3.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/classes/brickbreaker/vista/JpNiveles$4.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/brickbreaker/vista/JpNiveles$4.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/classes/brickbreaker/vista/JpNiveles.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/brickbreaker/vista/JpNiveles.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/brickbreaker/vista/JpNiveles.form" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/brickbreaker/vista/JpNiveles.form" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/recursos/imagenes/Boton-Exit.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/recursos/imagenes/Boton-options.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/recursos/imagenes/Boton-play.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/recursos/imagenes/Instrucciones.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/recursos/imagenes/boton-close.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/recursos/imagenes/boton-instrucciones.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/recursos/imagenes/fondo.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/recursos/imagenes/fondo2.jpeg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/brickbreaker/BrickBreaker.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/brickbreaker/BrickBreaker.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/brickbreaker/controlador/Control.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/brickbreaker/controlador/Control.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/brickbreaker/modelo/Barra.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/brickbreaker/modelo/Barra.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/brickbreaker/modelo/Bloques.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/brickbreaker/modelo/Bloques.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/brickbreaker/modelo/Pelota.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/brickbreaker/modelo/Pelota.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/brickbreaker/vista/JpInicio.form" beforeDir="false" afterPath="$PROJECT_DIR$/src/brickbreaker/vista/JpInicio.form" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/brickbreaker/vista/JpInicio.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/brickbreaker/vista/JpInicio.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/brickbreaker/vista/JpInstrucciones.form" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/brickbreaker/vista/JpInstrucciones.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/brickbreaker/vista/JpJuego.form" beforeDir="false" afterPath="$PROJECT_DIR$/src/brickbreaker/vista/JpJuego.form" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/brickbreaker/vista/JpJuego.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/brickbreaker/vista/JpJuego.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/brickbreaker/vista/JpNiveles.form" beforeDir="false" afterPath="$PROJECT_DIR$/src/brickbreaker/vista/JpNiveles.form" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/brickbreaker/vista/JpNiveles.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/brickbreaker/vista/JpNiveles.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/recursos/imagenes/Boton-Exit.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/recursos/imagenes/Boton-options.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/recursos/imagenes/Boton-play.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/recursos/imagenes/Instrucciones.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/recursos/imagenes/boton-close.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/recursos/imagenes/boton-instrucciones.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/recursos/imagenes/fondo.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/recursos/imagenes/fondo2.jpeg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/brickbreaker/vista/JpNiveles.form" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/com/mycompany/brickbreaker/vista/JpInicio$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/com/mycompany/brickbreaker/vista/JpInicio$2.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/com/mycompany/brickbreaker/vista/JpInicio$3.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/com/mycompany/juegoBrickBreaker/vista/JpInicio$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/com/mycompany/juegoBrickBreaker/vista/JpInicio$2.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/com/mycompany/juegoBrickBreaker/vista/JpInicio$3.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/com/mycompany/juegoBrickBreaker/vista/JpInstrucciones$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/com/mycompany/juegoBrickBreaker/vista/JpInstrucciones$2.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/nbproject/build-impl.xml" beforeDir="false" afterPath="$PROJECT_DIR$/nbproject/build-impl.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/nbproject/genfiles.properties" beforeDir="false" afterPath="$PROJECT_DIR$/nbproject/genfiles.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/nbproject/private/private.properties" beforeDir="false" afterPath="$PROJECT_DIR$/nbproject/private/private.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/nbproject/private/private.xml" beforeDir="false" afterPath="$PROJECT_DIR$/nbproject/private/private.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/nbproject/project.properties" beforeDir="false" afterPath="$PROJECT_DIR$/nbproject/project.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/nbproject/project.xml" beforeDir="false" afterPath="$PROJECT_DIR$/nbproject/project.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/brickBreaker/brickbreaker/BrickBreaker.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/brickBreaker/brickbreaker/BrickBreaker.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/brickBreaker/brickbreaker/controlador/Control$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/brickBreaker/brickbreaker/controlador/Control$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/brickBreaker/brickbreaker/controlador/Control$2.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/brickBreaker/brickbreaker/controlador/Control$2.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/brickBreaker/brickbreaker/controlador/Control$3.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/brickBreaker/brickbreaker/controlador/Control$3.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/brickBreaker/brickbreaker/controlador/Control$4.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/brickBreaker/brickbreaker/controlador/Control$4.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/brickBreaker/brickbreaker/controlador/Control$5.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/brickBreaker/brickbreaker/controlador/Control$5.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/brickBreaker/brickbreaker/controlador/Control.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/brickBreaker/brickbreaker/controlador/Control.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/brickBreaker/brickbreaker/modelo/Pelota.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/brickBreaker/brickbreaker/modelo/Pelota.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -81,23 +81,42 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "Application.BrickBreaker.executor": "Run",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "UI_DESIGNER_EDITOR_MODE.UIDesignerToolWindowManager.SHOW": "false",
-    "git-widget-placeholder": "master",
-    "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "C:/Users/caaco/OneDrive/Documentos/NetBeansProjects/brickBreaker",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Application.BrickBreaker.executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;UI_DESIGNER_EDITOR_MODE.UIDesignerToolWindowManager.SHOW&quot;: &quot;false&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
+    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/caaco/OneDrive/Desktop/brickBreaker&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Artifacts&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
+  <component name="RunManager">
+    <configuration default="true" type="JetRunConfigurationType">
+      <module name="brickBreaker" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="KotlinStandaloneScriptRunConfigurationType">
+      <module name="brickBreaker" />
+      <option name="filePath" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+  </component>
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
@@ -116,6 +135,10 @@
       <updated>1728244279138</updated>
       <workItem from="1728244280191" duration="106000" />
       <workItem from="1728708200222" duration="1415000" />
+      <workItem from="1728799662754" duration="383000" />
+      <workItem from="1728845154848" duration="9000" />
+      <workItem from="1728845171737" duration="200000" />
+      <workItem from="1728848869267" duration="21000" />
     </task>
     <servers />
   </component>

@@ -1,0 +1,177 @@
+@startuml
+
+skinparam classAttributeIconSize 0
+!theme spacelab
+package modelo {
+    class Barra {
+      + Barra(int, int, int, int, int, String): 
+      - altura: int
+      - x: int
+      - base: int
+      - y: int
+      - imagen: Image
+      + moverDerecha(): void
+      + moverIzquierda(): void
+      + mover(int): void
+       y: int
+       altura: int
+       imagen: Image
+       base: int
+       x: int
+    }
+    
+    class Bloques {
+      + Bloques(int, int, int, int, int, int, boolean, String): 
+      - x: int
+      - y: int
+      - alto: int
+      - ancho: int
+      - imagen: Image
+      - dureza: int
+      - identificador: int
+      - destruido: boolean
+      + golpear(): void
+      + reducirDureza(): void
+      + estaDestruido(): boolean
+      + moverIzquierda(): void
+      + moverDerecha(): void
+       destruido: boolean
+       y: int
+       imagen: Image
+       dureza: int
+       ancho: int
+       alto: int
+       identificador: int
+       x: int
+    }
+    
+    class Pelota {
+      + Pelota(int, int, int, int, int, String): 
+      - x: int
+      - velocidadY: int
+      - y: int
+      - velocidadX: int
+      - anchoPanel: int
+      - radio: int
+      - imagen: Image
+      - altoPanel: int
+      + rebotarVerticalemente(): void
+      + moverPelotaAlCentro(): void
+      + setVelocidades(int, int): void
+      + mover(Barra): void
+      + rebotar(int): void
+       y: int
+       radio: int
+       altoPanel: int
+       imagen: Image
+       velocidadY: int
+       velocidadX: int
+       anchoPanel: int
+       x: int
+    }
+
+}
+
+package controlador {
+    class Control {
+      + Control(JFrame): 
+      - jpJuego: JpJuego
+      - nivelSeleccionado: int
+      - sonido: Sonido
+      - jpNiveles: JpNiveles
+      - temporizadorDelJuego(): void
+      - colisionConBloque(): void
+      - bloquesNoDestuidos(): void
+      - cantidadVidas(): void
+      - manejarRebote(int): void
+      - bloquesDestruidos(): void
+      + reiniciarTemporizador(): void
+      + detener(int): void
+      - controlPuntos(int): void
+      - verificarColisionBarra(): void
+      + reiniciarJuego(): void
+      - destruirBloque(int): void
+      + crearBloques(): void
+      - detectarbordeInferior(): void
+      + cambiarPanel(JPanel): void
+      + iniciar(): void
+       nivelSeleccionado: int
+       jpJuego: JpJuego
+       control: Control
+       jpNiveles: JpNiveles
+       sonido: Sonido
+    }
+}
+
+package vista {
+    class JpInicio {
+      + JpInicio(): 
+      # paintComponent(Graphics): void
+      - btnIniciarActionPerformed(ActionEvent): void
+      - initComponents(): void
+      - btnSalirActionPerformed(ActionEvent): void
+    }
+    
+    class JpJuego {
+      + JpJuego(Pelota, Barra, Control, Sonido): 
+      - perder: boolean
+      - vidasPelotas: ArrayList<Pelota>
+      - nivelSeleccionado: int
+      - bloques: Bloques[]
+      + paintComponent(Graphics): void
+      + actualizarLblTiempo(String): void
+      + actualizarPuntos(int): void
+      + moverBloquesHorizontales(): void
+      - btnReiniciarActionPerformed(ActionEvent): void
+      - btnRegresarActionPerformed(ActionEvent): void
+      - btnPausaActionPerformed(ActionEvent): void
+      - initComponents(): void
+      + cambiarImagenFondo(Image): void
+      + actualizar(): void
+       nivelSeleccionado: int
+       perder: boolean
+       bloques: Bloques[]
+       nivel1Completo: boolean
+       vidasPelotas: ArrayList<Pelota>
+    }
+    
+    class JpNiveles {
+      + JpNiveles(Control, JpJuego): 
+      # paintComponent(Graphics): void
+      + seleccionFondo(): Image
+      - btnRegresar1ActionPerformed(ActionEvent): void
+      - initComponents(): void
+      - btnNivel3ActionPerformed(ActionEvent): void
+      - btnNivel1ActionPerformed(ActionEvent): void
+      - btnNivel2ActionPerformed(ActionEvent): void
+    }
+}
+package utils {
+    class Sonido {
+      + Sonido(): 
+      + detener(): void
+      + reproducir(String): void
+      + reproducirSonidoRebote(): void
+    }
+}
+
+class BrickBreaker {
+  + BrickBreaker(): 
+  + main(String[]): void
+}
+
+Control      "1" *-[#595959,plain]-> "barra\n1" Barra        
+Control      "1" *-[#595959,plain]-> "bloques\n*" Bloques      
+Control      "1" *-[#595959,plain]-> "jpJuego\n1" JpJuego      
+Control      "1" *-[#595959,plain]-> "jpNiveles\n1" JpNiveles    
+Control      "1" *-[#595959,plain]-> "vidasPelotas\n*" Pelota       
+Control      "1" *-[#595959,plain]-> "sonido\n1" Sonido       
+JpJuego      "1" *-[#595959,plain]-> "barra\n1" Barra        
+JpJuego      "1" *-[#595959,plain]-> "bloques\n*" Bloques      
+JpJuego      "1" *-[#595959,plain]-> "control\n1" Control      
+JpJuego      "1" *-[#595959,plain]-> "vidasPelotas\n*" Pelota       
+JpJuego      "1" *-[#595959,plain]-> "sonido\n1" Sonido       
+JpNiveles    "1" *-[#595959,plain]-> "control\n1" Control      
+JpNiveles    "1" *-[#595959,plain]-> "jpJuego\n1" JpJuego      
+JpNiveles    "1" *-[#595959,plain]-> "sonido\n1" Sonido       
+@enduml
